@@ -29,3 +29,7 @@ In de wereld van elektriciteit duiden we de hoogte van de weerstand in Ohm ($\Om
 
 ![weerstand_10ohm](../img/mountain_10.svg)
 ![weerstand_100ohm](../img/mountain_100.svg)
+
+!!! warning
+
+    Omdat de loper altijd alle energie moet opdoen voor de finish, kan het zijn dat als je een heel goede loper hebt, maar geen weerstand, dat deze zo snel loopt dat hij vuur vat! Dit is wat we een kortsluiting noemen.
