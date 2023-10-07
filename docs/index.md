@@ -1,21 +1,13 @@
-# Welcome to MkDocs
+# Welkom
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Deze website legt stap voor stap uit hoe je zelf systemen kan automatiseren.
 
-## Commands
+Enkele voorbeelden zijn:
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* een magneet laten zweven
+* een inbreker alarm
+* een weerstation
 
-## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
 
-## Latex
 
-$$ \rho = x^2 $$
