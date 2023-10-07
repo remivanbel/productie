@@ -8,6 +8,9 @@ markdown_extensions:
       generic: true
   - attr_list
   - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 extra_javascript:
   - javascripts/mathjax.js

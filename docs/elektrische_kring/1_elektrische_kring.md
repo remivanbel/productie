@@ -11,7 +11,8 @@ De loper start altijd aan de start en eindigt aan de finish. Het parcour dat de 
 
 ![stroom_parcour](../img/backdrop1.svg)
 
-In elektriciteit spreken we af dat we de start de '+' noemen, en de finish de '-'. De stroom zal dus altijd van + naar - gaan.
+!!! note
+    In elektriciteit spreken we af dat we de start de '+' noemen, en de finish de '-'. De stroom zal dus altijd van + naar - gaan.
 
 ## Potentiaal
 Er zijn verschillende soorten lopers. Sommige lopers zijn goed getraind en starten met veel energie aan de finish. Andere lopers zijn minder goed getrained en starten met minder. We geven de potentiele energie weer in 'Volts'. Een loper met 5V energie zal dus minder snel een zelde ronde lopen als een loper met 9V.
