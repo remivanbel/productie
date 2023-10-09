@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../2_power/">
       
       
-        <link rel="next" href="../2_digital_output/">
+        <link rel="next" href="../4_analog_input/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>1 power - FPT: Productietechnieken</title>
+        <title>Digitale output - FPT: Productietechnieken</title>
       
     
     
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#digitale-output" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -96,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1 power
+              Digitale output
             
           </span>
         </div>
@@ -240,6 +245,46 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../1_introductie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introductie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_power/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -248,57 +293,63 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Digitale output
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    1 power
+    Digitale output
   </span>
   
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../2_digital_output/" class="md-nav__link">
         
-  
-  <span class="md-ellipsis">
-    2 digital output
-  </span>
-  
 
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
-    <li class="md-nav__item">
-      <a href="../3_digital_input/" class="md-nav__link">
-        
+    
   
-  <span class="md-ellipsis">
-    3 digital input
-  </span>
   
-
-      </a>
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#elektrische-schakeling" class="md-nav__link">
+    Elektrische schakeling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -314,7 +365,27 @@
         
   
   <span class="md-ellipsis">
-    4 analog input
+    Analog In
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5_digital_input/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5 digital input
   </span>
   
 
@@ -431,6 +502,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#elektrische-schakeling" class="md-nav__link">
+    Elektrische schakeling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -445,9 +540,68 @@
                   
 
 
-  <h1>1 power</h1>
-
-
+<h1 id="digitale-output">Digitale output</h1>
+<p>In dit stuk ga je zien hoe je de digitale output kan gebruiken. Dit wil zeggen dat we de pin als 'output' gaan gebruiken.</p>
+<p><img alt="arduino_digital_io" src="../../img/arduino_digital_io.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Beschrijving</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0... 13</code></td>
+<td>Kan werken als digitale input of output.</td>
+<td>Meet of er spanning (&gt;2.5V) of geen spanning (&lt;2.5V) is.</td>
+<td>Kan 'HOOG' (+5V) of 'LAAG' (+0V) zijn.</td>
+</tr>
+<tr>
+<td><code>GND</code></td>
+<td>gemeenschappelijke grond (universele - ). Zelfde als 0V. (zelfde als bij POWER)</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="elektrische-schakeling">Elektrische schakeling</h2>
+<p>Bij HOOG zal de pin +5V zijn, bij LAAG zal de pin 0V zijn. Om te zorgen dat er een stroom is als de pin HOOG staat, moeten we zorgen dat er een elektrische kring is. Dit wil zeggen dat we een + moeten hebben (de pin), en een - (de grond).</p>
+<p>Je moet dus altijd zorgen dat er een gesloten kring is. </p>
+<p>Onderstaand voorbeeld laat zien hoe je de schakeling kan maken om een LED te laten branden met pin 9.</p>
+<p><img alt="schakeling_led" src="../../img/digitale_output_schakeling_led.png" width="100" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Let er op dat de maximale stroom die een digitale output kan leveren 40mA is. Dit is genoeg om 2 LED lampjes te laten branden, maar niet om bijvoorbeeld een motor te laten draaien. Om een grote verbruiker aan of uit te zetten zal je gebruik moeten maken van transistoren.</p>
+</div>
+<h2 id="code">Code</h2>
+<p>Om te programmeren wanneer de pin 'HOOG' of LAAG moet zijn, kan je gebruiken maken van het blokje <code>pin 0 instellen op HOOG</code>.</p>
+<p><img alt="pin_instellen_op_hoog" src="../../img/pin_instellen_op.png" /></p>
+<p>Onderstaande programma zal bijvoorbeeld:</p>
+<ul>
+<li>Pin 9 hoog zetten. Hierdoor stroomt er een stroom van pin 9 via de weerstand en de LED naar de grond.</li>
+<li>1 seconde wachten. Pin 9 blijft dus hoog en de lamp blijft 1 seconde lang branden.</li>
+<li>pin 9 laag zetten. Hierdoor stroomt er geen stroom meer door de LED en zal deze uitgaan.</li>
+<li>1 seconde wachten. Pin 9 blijft dus laag en de lampg brand 1 seconde niet.</li>
+</ul>
+<p>Omdat alle 4 de stappen in een 'voor altijd' lus zitten, zal het resultaat een knipperende LED zijn.</p>
+<p><img alt="voorbeeld_knipperen_led" src="../../img/voorbeeld_knipperen_led.png" /></p>
+<details class="note">
+<summary>Oefening 1: Verkeerslicht</summary>
+<p>Maak zelf een verkeerslicht. </p>
+<p>Opgave: Laat eerst 4 seconden een rode led branden. Daarna 1 seconde een orange led. Tenslotte 4 seconden een groene LED. Zet alles in een lus zodat het verkeerslicht zich herhaalt (zoals een echt verkeerslicht).  </p>
+<p>Schakeling:<br />
+De weerstanden zijn elk 500 <span class="arithmatex">\(\Omega\)</span>.<br />
+<img alt="verkeerslicht" src="../../img/schakeling_verkeerslicht.png" /></p>
+</details>
+<details class="note">
+<summary>Oefening 2: Morse</summary>
+<p>Laat een ledje branden dat SOS uitstuurt in Morse code. </p>
+<p>Opgave: Voor SOS moet je eerste 3 keer kort knipperen (1 seconde aan, 1 seconde uit), vervolgens 3 seconden lang (3 seconden aan, 1 seconde uit) en tenslotte terug 3 keer kort. Maak zelf een schakeling.</p>
+<p><img alt="sos_morse" src="../../img/morse_code_sos.png" /></p>
+</details>
 
 
 

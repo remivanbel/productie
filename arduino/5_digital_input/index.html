@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../2_digital_output/">
+        <link rel="prev" href="../4_analog_input/">
       
       
-        <link rel="next" href="../4_analog_input/">
+        <link rel="next" href="../../elektrische_kring/1_elektrische_kring/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>3 digital input - FPT: Productietechnieken</title>
+        <title>5 digital input - FPT: Productietechnieken</title>
       
     
     
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#digital-io" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -96,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              3 digital input
+              5 digital input
             
           </span>
         </div>
@@ -242,11 +247,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../1_power/" class="md-nav__link">
+      <a href="../1_introductie/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    1 power
+    Introductie
   </span>
   
 
@@ -262,11 +267,51 @@
   
   
     <li class="md-nav__item">
-      <a href="../2_digital_output/" class="md-nav__link">
+      <a href="../2_power/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    2 digital output
+    Power
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_digital_output/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Digitale output
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_analog_input/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analog In
   </span>
   
 
@@ -289,36 +334,51 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    5 digital input
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    3 digital input
+    5 digital input
   </span>
   
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../4_analog_input/" class="md-nav__link">
         
-  
-  <span class="md-ellipsis">
-    4 analog input
-  </span>
-  
 
-      </a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#digital-io" class="md-nav__link">
+    Digital IO
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -432,6 +492,21 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#digital-io" class="md-nav__link">
+    Digital IO
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -445,9 +520,34 @@
                   
 
 
-  <h1>3 digital input</h1>
+  <h1>5 digital input</h1>
 
-
+<h2 id="digital-io">Digital IO</h2>
+<p><img alt="arduino_digital_io" src="../../img/arduino_digital_io.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Pin</th>
+<th>Beschrijving</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0... 13</code></td>
+<td>Kan werken als digitale input of output.</td>
+<td>Meet of er spanning (&gt;2.5V) of geen spanning (&lt;2.5V) is.</td>
+<td>Kan 'HOOG' (+5V) of 'LAAG' (+0V) zijn.</td>
+</tr>
+<tr>
+<td><code>GND</code></td>
+<td>gemeenschappelijke grond (universele - ). Zelfde als 0V. (zelfde als bij POWER)</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 
 

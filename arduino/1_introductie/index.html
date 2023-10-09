@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../1_power/">
+        <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../3_digital_input/">
+        <link rel="next" href="../2_power/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>2 digital output - FPT: Productietechnieken</title>
+        <title>Introductie - FPT: Productietechnieken</title>
       
     
     
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#introductie" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -96,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2 digital output
+              Introductie
             
           </span>
         </div>
@@ -240,26 +245,6 @@
                 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../1_power/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    1 power
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -268,16 +253,62 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Introductie
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    2 digital output
+    Introductie
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#layout-pins-en-leds" class="md-nav__link">
+    Layout: Pins en leds
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -290,11 +321,31 @@
   
   
     <li class="md-nav__item">
-      <a href="../3_digital_input/" class="md-nav__link">
+      <a href="../2_power/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    3 digital input
+    Power
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_digital_output/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Digitale output
   </span>
   
 
@@ -314,7 +365,27 @@
         
   
   <span class="md-ellipsis">
-    4 analog input
+    Analog In
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5_digital_input/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5 digital input
   </span>
   
 
@@ -431,6 +502,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#layout-pins-en-leds" class="md-nav__link">
+    Layout: Pins en leds
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -445,9 +540,34 @@
                   
 
 
-  <h1>2 digital output</h1>
-
-
+<h1 id="introductie">Introductie</h1>
+<h2 id="layout-pins-en-leds">Layout: Pins en leds</h2>
+<p>Een standaard arduino UNO bord ziet er als volgt uit</p>
+<p><img alt="arduino_board" src="../../img/arduino_board.png" /></p>
+<p>De zwarte vakjes zijn wat we <strong>pins</strong> noemen. Hier kan je draden aan verbinden die dan een elektrische kring kunnen maken. De pins zijn gegroepeerd in verschillende soorten: Power, Analog In en Digital. Van de aanduiding (~PWM) moeten we ons voorlopig niks aantrekken.</p>
+<p>Naast de pins zijn er ook enkele LED lampjes (L, TX, RX, ON). ON zal altijd branden vanaf je op 'Simulatie starten' duwt. L is de interne LED van de arduino en kan je laten branden met een code-blok `ingebouwde LED instellen op HOOG``. TX en RX zijn voorlopig nog niet belangrijk.</p>
+<h2 id="code">Code</h2>
+<p>Het speciale aan arduino is dat we kunnen programmeren wat er met de pins en leds gebeurd. Dit doen we met behulp van blokken die zeer gelijkaardig zijn aan hoe je Scratch programeert.  </p>
+<p>Als je een nieuwe arduino toevoegt aan je project, zal deze automatisch reeds een klein stukje code bevatten. Dit stukje zorgt ervoor dat de interne LED (L) van de arduino zal knipperen vanaf we op 'simulatie starten' duwen.</p>
+<p><img alt="initiele code" src="../../img/initiele_code_arduino.png" /></p>
+<ul>
+<li>
+<p><code>Bij starten</code>: Alles wat in dit blokje zit wordt maar 1 keer uitgevoerd, op het moment dat de arduino opstart. Dit kan bijvoorbeeld handig zijn om een geluid signaal te laten horen vanaf het systeem aan staat.</p>
+</li>
+<li>
+<p><code>Voor altijd</code>: Alles wat in dit blokje zit wordt oneindig vaak uitgevoerd. Als het laatste blokje is uitgevoerd, begin je dus terug met het eerste blokje. Dit gaat door tot de arduino uitgetrokken wordt.</p>
+</li>
+<li>
+<p><code>ingebouwde LED instellen op HOOG</code>: Met deze blok kan je de ingebouwde LED HOOG of LAAG zetten. Hoog betekent dat de LED zal branden, LAAG betekend dat de led niet zal branden. </p>
+</li>
+<li>
+<p><code>1 seconden wachten</code>: Met deze blok kan je een variabel aantal seconden (of milliseconden) wachten. Zo kan je bijvoorbeeld een lamp voor 4 seconden laten branden door eerst de LED HOOG te zetten en vervolgens te wachten.</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Oefening 1: Opstart</p>
+<p>Laat de led eerst 4 seconden branden voor dat hij begint te knipperen.</p>
+</div>
 
 
 
