@@ -316,6 +316,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Analog In
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -325,6 +336,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#waarom" class="md-nav__link">
+    Waarom?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analoog-naar-digitaal" class="md-nav__link">
+    Analoog naar digitaal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variabele-weerstanden" class="md-nav__link">
+    Variabele weerstanden
+  </a>
+  
+    <nav class="md-nav" aria-label="Variabele weerstanden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#potentiometer" class="md-nav__link">
+    Potentiometer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lichtweerstand" class="md-nav__link">
+    Lichtweerstand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temperatuur-weerstand" class="md-nav__link">
+    Temperatuur weerstand
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -434,6 +519,26 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elektrische_kring/3_elektrische_kring_symbolen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elektrische kring symbolen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -460,6 +565,69 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#waarom" class="md-nav__link">
+    Waarom?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analoog-naar-digitaal" class="md-nav__link">
+    Analoog naar digitaal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variabele-weerstanden" class="md-nav__link">
+    Variabele weerstanden
+  </a>
+  
+    <nav class="md-nav" aria-label="Variabele weerstanden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#potentiometer" class="md-nav__link">
+    Potentiometer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lichtweerstand" class="md-nav__link">
+    Lichtweerstand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temperatuur-weerstand" class="md-nav__link">
+    Temperatuur weerstand
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -511,6 +679,56 @@
 </tr>
 </tbody>
 </table>
+<h2 id="waarom">Waarom?</h2>
+<p>Het kan handig zijn om de spanning te meten omdat we hieruit de weerstand kunnen bepalen. Neem bijvoorbeeld volgende kring</p>
+<p><img alt="" src="../../img/schema_dubbele_weerstand.png" /></p>
+<p>De spanning op punt A1 zal afhankelijk zijn van hoe groot de weerstand R1 is. De elektronen verliezen namelijk potentiele energie als ze door de weerstand gaan. Ze beginnen altijd met 5V maar na de weerstand hebbben ze bijvoorbeeld nog maar 4V. Na de tweede weerstand zullen ze altijd 0V hebben.</p>
+<p>Het kunnen bepalen van hoe groot een weerstand is is interessant omdat er sensoren bestaan waarbij de weerstand afhankelijk is van de lichtintensiteit, de temperatuur, de druk, de positie of de kracht.</p>
+<h2 id="analoog-naar-digitaal">Analoog naar digitaal</h2>
+<p>Het voltage A1 zal een analoog signaal zijn, namelijk een willeukrige spanning tussen 0 en 5V. Bijvoorbeel 3.34V zou de werkelijke spanning kunnen zijn. Om deze spanning echter om te zetten in computer code moet de arduino hier binair getal van maken. Aangezien de analoge input 10 bits gebruikt, zal de maximale waarde 1111 1111 of 1023 zijn. Een input van 5V zal dus waarde 1023 krijgen, een input van 0V een waarde 0. Alle waarden tussen 5V en 0V zullen lineair geinterpoleerd worden. Extra info tussen analoog en digitaal vind je in volgende video: https://youtu.be/zkhMy6piwt4?si=L8XUVbadMLv4TvXe.</p>
+<h2 id="variabele-weerstanden">Variabele weerstanden</h2>
+<h3 id="potentiometer">Potentiometer</h3>
+<p>Onderstaande figuur geeft een potentiometer mee. Bij een potentiometer kan je op de 'Signaal' pin meten hoeveel van de oorspronkelijke spanning (aangebracht op 'Voeding') nog over is. Als de Loper helemaal naar rechts staat, zal alle spanning nog aanwezig zijn. Als de Loper helemaal links is zal alle spanning opgebruikt zijn en meten we 0 Volt (zelfde als Massa of Grond). Als de loper halverwege staat meten we 2.5V, aangezien de stroom reeds door een stuk weerstand van de Koolstofbaan moest. </p>
+<p>Afbeelding genomen van https://www.mvwautotechniek.nl/potentiometer/</p>
+<p><img alt="" src="../../img/potentiometer_schema.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Onthoud, het Signaal zal door de Analog to Digital converter omgezet worden naar een getal tussen 0 (0V) en 1023 (5V).</p>
+</div>
+<h3 id="lichtweerstand">Lichtweerstand</h3>
+<h3 id="temperatuur-weerstand">Temperatuur weerstand</h3>
+<h2 id="code">Code</h2>
+<p>Om te meten hoeveel spanning er op de analoge pin is, kan je gebruik maken van het blokje <code>analoge pin lezen</code></p>
+<p><img alt="Alt text" src="../../img/analoge_pin_lezen.png" /></p>
+<p>Om te vermijden dat je meerdere keren deze waarde moet lezen, kan je 1x een variabele aanmaken (bvb meetwaarde, en deze variabele dan later elke keer opnieuw gebruiken). Ga hiervoor naar <em>Variabelen</em> en klik op <em>Variabele maken ...</em>.</p>
+<p>Je kan nu de blok <code>Meetwaarde instellen op</code> om de meetwaarde eenmalig in te stellen op de analoge input. Vanaf dan kan je de variabele zelf gebruiken.</p>
+<p><img alt="" src="../../img/variabele_instellen_op.png" /></p>
+<p>In volgend voorbeeld wordt geillustreed hoe je met deze functies:</p>
+<ol>
+<li>De waarden van de potentiometer kan printen in de 'Seriële Monitor'</li>
+<li>De interne LED kan aanzetten vanaf de potentiometer over halfweg zet.</li>
+</ol>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">wiring</label><label for="__tabbed_1_2">code</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="" src="../../img/voorbeeld_analog_in_wiring.png" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="" src="../../img/voorbeeld_analog_in_code.png" /></p>
+</div>
+</div>
+</div>
+<details class="note">
+<summary>Oefening 1: Volumeknop</summary>
+<p>Maak een volumeknop die meer lampjes doet branden naarmate je verder gaat.</p>
+<p>Schakeling:<br />
+De weerstanden zijn elk 500 <span class="arithmatex">\(\Omega\)</span>.<br />
+<img alt="" src="../../img/schakeling_oef1_analog_in.png" /></p>
+</details>
+<details class="note">
+<summary>Oefening 2: Regelbaar maximum</summary>
+<p>Zorg voor een regelbaar maximum op de volumeknop. Herhaal oefening 1 maar voeg een tweede draaiknop toe waarop je een maximum kan instellen. Dit wil zeggen dat je als je de volumeknop voorbij het maximum draait, er geen extra lampjes gaan branden. </p>
+</details>
 
 
 
